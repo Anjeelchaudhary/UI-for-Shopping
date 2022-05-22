@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_fourth_sem/pages/Home/main_page.dart';
+
+import 'home/main_guitar_page.dart';
 
 void main() {
   runApp(const MyApp());
