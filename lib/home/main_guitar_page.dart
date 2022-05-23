@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_fourth_sem/utils/colors.dart';
+import 'package:project_fourth_sem/widgets/big_text.dart';
 
 class MainHomePage extends StatefulWidget {
   MainHomePage({Key? key}) : super(key: key);
@@ -23,7 +24,10 @@ class _MainHomePageState extends State<MainHomePage> {
                 children: [
                   Column(
                     children: [
-                      Text("City"),
+                      BigText(
+                        text: "Kathmandu",
+                        color: AppColors.mainColor,
+                      ),
                       Text("State"),
                     ],
                   ),
