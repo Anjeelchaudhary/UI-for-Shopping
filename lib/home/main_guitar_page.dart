@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_fourth_sem/utils/colors.dart';
 import 'package:project_fourth_sem/widgets/big_text.dart';
+import 'package:project_fourth_sem/widgets/small_text.dart';
 
 class MainHomePage extends StatefulWidget {
   MainHomePage({Key? key}) : super(key: key);
@@ -28,7 +29,16 @@ class _MainHomePageState extends State<MainHomePage> {
                         text: "Kathmandu",
                         color: AppColors.mainColor,
                       ),
-                      Text("State"),
+                      //Here Row is used to make a small text and the icon in the same line
+                      Row(
+                        children: [
+                          SmallText(
+                            text: "Place",
+                            color: Colors.black54,
+                          ),
+                          Icon(Icons.arrow_drop_down_rounded)
+                        ],
+                      )
                     ],
                   ),
                   Center(
