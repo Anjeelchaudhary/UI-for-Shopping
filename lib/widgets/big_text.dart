@@ -26,6 +26,7 @@ class BigText extends StatelessWidget {
       //Here evry code defines for the default one if user has not given the
       //custom requirements
       text,
+      maxLines: 1,
       overflow: overflow,
       style: TextStyle(
         color: color,
