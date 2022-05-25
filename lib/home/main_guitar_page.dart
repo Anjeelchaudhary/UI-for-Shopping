@@ -53,7 +53,7 @@ class _MainHomePageState extends State<MainHomePage> {
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: AppColors.mainColor,
+                        color:  AppColors.mainColor,
                       ),
                     ),
                   )

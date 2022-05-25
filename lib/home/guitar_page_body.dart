@@ -32,7 +32,12 @@ class _GuitarPageBodyState extends State<GuitarPageBody> {
       height: 220,
       margin: EdgeInsets.only(left: 5, right: 5),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30), color: Color(0xFF69c5df)),
+          borderRadius: BorderRadius.circular(30),
+          //here to differentiate the color
+          //even widgets is made blue and other made purple
+          color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
+          image:  DecorationImage(
+              image: AssetImage("assets/image/guitarPiano.png"))),
     );
   }
 }

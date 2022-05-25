@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       //This line is to remove the debug banner in topRightCorner
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+       
         primarySwatch: Colors.blue,
       ),
       home: MainHomePage(),
