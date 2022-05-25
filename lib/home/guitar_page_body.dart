@@ -11,6 +11,7 @@ class _GuitarPageBodyState extends State<GuitarPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 320,
       //Here pageView.builder is for the transitioning of the
       //diffenent wigits
       child: PageView.builder(
@@ -26,7 +27,12 @@ class _GuitarPageBodyState extends State<GuitarPageBody> {
     //here we have to declare the function of _buildPageItem
   }
 
-    Widget _buildPageItem(int index) {
-    return Container();
+  Widget _buildPageItem(int index) {
+    return Container(
+      height: 220,
+      margin: EdgeInsets.only(left: 5, right: 5),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(30), color: Color(0xFF69c5df)),
+    );
   }
 }

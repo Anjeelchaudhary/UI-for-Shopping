@@ -3,6 +3,8 @@ import 'package:project_fourth_sem/utils/colors.dart';
 import 'package:project_fourth_sem/widgets/big_text.dart';
 import 'package:project_fourth_sem/widgets/small_text.dart';
 
+import 'guitar_page_body.dart';
+
 class MainHomePage extends StatefulWidget {
   MainHomePage({Key? key}) : super(key: key);
 
@@ -59,6 +61,7 @@ class _MainHomePageState extends State<MainHomePage> {
               ),
             ),
           ),
+          GuitarPageBody(),
         ],
       ),
     );
