@@ -10,6 +10,7 @@ class GuitarPageBody extends StatefulWidget {
 class _GuitarPageBodyState extends State<GuitarPageBody> {
   @override
   Widget build(BuildContext context) {
+    //this is Parent Container
     return Container(
       height: 320,
       //Here pageView.builder is for the transitioning of the
@@ -28,16 +29,26 @@ class _GuitarPageBodyState extends State<GuitarPageBody> {
   }
 
   Widget _buildPageItem(int index) {
-    return Container(
-      height: 220,
-      margin: EdgeInsets.only(left: 5, right: 5),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
-          //here to differentiate the color
-          //even widgets is made blue and other made purple
-          color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
-          image:  DecorationImage(
-              image: AssetImage("assets/image/guitarPiano.png"))),
+    //Below the height of the child is not following the 220 of its height
+    //its following parent heigt i.e=320 in order to make quite following of 220
+    //container is wrapped in the stack widget so that it can implement 220 of height
+    return Stack(
+      children: [
+        //This is child Container
+        Container(
+          height: 220,
+          margin: EdgeInsets.only(left: 5, right: 5),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              //here to differentiate the color
+              //even widgets is made blue and other made purple
+              color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
+              image: DecorationImage(
+                  //fit command is used as to fit the image in the widget
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/image/guitar00.png"))),
+        )
+      ],
     );
   }
 }
