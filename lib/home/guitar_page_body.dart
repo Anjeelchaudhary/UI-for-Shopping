@@ -47,6 +47,19 @@ class _GuitarPageBodyState extends State<GuitarPageBody> {
                   //fit command is used as to fit the image in the widget
                   fit: BoxFit.cover,
                   image: AssetImage("assets/image/guitar00.png"))),
+        ),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            height: 150,
+            margin: EdgeInsets.only(left: 35, right: 35, bottom: 10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              //here to differentiate the color
+              //even widgets is made blue and other made purple
+              color: Colors.white,
+            ),
+          ),
         )
       ],
     );
